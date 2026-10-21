@@ -1,0 +1,20 @@
+<body>
+    {% include "menu.html" %}
+    <div>
+        <div class="titre_paragraphe">
+            <h1>{{ mon_titre }}</h1>
+        </div>
+        <div>
+            <p class="text-center text-success fw-bold fs-4">{{ mon_paragraphe }}</p>
+        </div>
+        <div>
+            <p class="text-center text-success fw-bold fs-4">
+                {% if nombre < 10 %}
+                    Ce nombre est inférieur strict a 10.
+                {% else %}
+                    Cʼest un nombre entre 10 et lʼinfini.
+                {% endif %}
+            </p>
+        </div>
+    </div>
+</body>
